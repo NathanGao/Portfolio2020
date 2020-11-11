@@ -285,7 +285,7 @@ var app = (function () {
     		c: function create() {
     			h1 = element("h1");
     			h1.textContent = `Hello ${/*name*/ ctx[0]}!`;
-    			add_location(h1, file, 4, 0, 45);
+    			add_location(h1, file, 4, 0, 56);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -315,7 +315,7 @@ var app = (function () {
     function instance($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("App", slots, []);
-    	let name = "world";
+    	let name = "world LOOOOOOOOL";
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
